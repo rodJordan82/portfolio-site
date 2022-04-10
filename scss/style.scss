@@ -1,0 +1,44 @@
+@import "nav";
+
+
+.main__div--style {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 25vh 0px 75vh 0px;
+}
+
+
+.contact__list{
+    list-style-type: none;
+    padding: 0px;
+}
+
+
+.blurb{
+  font-size: medium;
+}
+
+div>ul{
+  list-style-type: none;
+  padding: 0px;
+  &>li>a{
+    font-weight: bold;
+  }
+}
+
+.bio{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.skills {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.skills-extra{
+  font-size: 0.8rem;
+  font-weight: bold;
+}

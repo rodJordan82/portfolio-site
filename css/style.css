@@ -1,0 +1,82 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+nav {
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+  text-shadow: 1px 1px #000;
+}
+
+a:focus {
+  color: #000000;
+  text-shadow: 1px 1px #000;
+}
+
+a:active {
+  color: #000000;
+  text-shadow: 1px 1px #000;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+}
+
+.main__div--style {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 25vh 0px 75vh 0px;
+}
+
+.contact__list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.blurb {
+  font-size: medium;
+}
+
+div > ul {
+  list-style-type: none;
+  padding: 0px;
+}
+div > ul > li > a {
+  font-weight: bold;
+}
+
+.bio {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.skills {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.skills-extra {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
