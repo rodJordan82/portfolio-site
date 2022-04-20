@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-nav {
+.nav {
   font-weight: bold;
   font-size: 20pt;
 }
@@ -29,7 +29,12 @@ a:active {
   text-shadow: 1px 1px #000;
 }
 
-nav > ul {
+.skills__container {
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.nav__list {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -39,21 +44,27 @@ nav > ul {
   margin-bottom: 10vh;
 }
 
+@media only screen and (max-width: 300px) {
+  .nav {
+    font-size: 10pt;
+  }
+}
+@media only screen and (min-width: 301px) and (max-width: 400px) {
+  .nav {
+    font-size: 12pt;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 500px) {
+  .nav {
+    font-size: 15pt;
+  }
+}
 .main__div--style {
   font-size: xx-large;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 25vh 0px 75vh 0px;
-}
-
-.contact__list {
-  list-style-type: none;
-  padding: 0px;
-}
-
-.blurb {
-  font-size: medium;
+  margin: 15vh 0px 10vh 0px;
 }
 
 div > ul {
@@ -64,19 +75,168 @@ div > ul > li > a {
   font-weight: bold;
 }
 
-.bio {
-  padding-left: 10%;
-  padding-right: 10%;
+.contact__list {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 0px 10vw 0px 10vw;
+}
+.contact__list--icons {
+  max-width: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.contact__list--icons--image {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.skills {
-  font-size: 1rem;
-  font-weight: bold;
+@media only screen and (max-width: 300px) {
+  #main__div--img {
+    justify-content: center;
+    max-width: 100%;
+    max-height: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .contact__list--icons {
+    max-width: 30%;
+  }
+}
+@media only screen and (min-width: 301px) and (max-width: 500px) {
+  #main__div--img {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    max-width: 100%;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  #main__div--img {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    max-width: 100%;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 801px) {
+  #main__div--img {
+    margin-left: 40vw;
+    margin-right: 40vw;
+    max-width: 60%;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+.skills__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 0px 10vw 0px 10vw;
+  column-gap: 20px;
+  align-items: baseline;
+}
+.skills__container--skillBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 15%;
+  padding: 10px;
 }
 
-.skills-extra {
-  font-size: 0.8rem;
-  font-weight: bold;
+#more {
+  display: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+.main__div--about {
+  margin-top: 20vh;
+}
+.main__div--about--blurb {
+  max-width: 80%;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: center;
+  text-indent: 10%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.projects__container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.projects__container--item {
+  padding: 5rem 1.3rem 1rem 1.3rem;
+  border: 3px solid #000000;
+  border-radius: 0.5rem;
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects__container--item--info-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+.projects__container--item--info-divider--image {
+  width: 55%;
+  height: 55%;
+  align-self: center;
+}
+.projects__container--item--info-divider--name {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.projects__container--item--info-divider--description {
+  margin-top: 1rem 0;
+  text-align: center;
+}
+.projects__container--item--link-divider {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.projects__container--item--link-divider--link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .projects__container {
+    justify-content: center;
+  }
+  .projects__container--item {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 880px) {
+  .projects__container {
+    justify-content: center;
+  }
+  .projects__container--item {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 881px) {
+  .projects__container {
+    justify-content: space-between;
+  }
+  .projects__container--item {
+    width: 20vw;
+  }
+}

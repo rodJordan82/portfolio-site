@@ -3,34 +3,33 @@
 *{
   font-family: 'Open Sans',
   sans-serif;
-  color: palette.$color3;
-  background-color: palette.$color2;
+  color: palette.$text;
+  background-color: palette.$background;
   text-align: center;
-  
 }
 
-
-nav{
-
+.nav{
   font-weight: bold;
   font-size: 20pt;
- 
-
 }
 
 a{
   text-decoration: none;
-
   &:hover{
-    color: palette.$color4;
+    color: palette.$text;
     text-shadow: 1px 1px #000;
   }
   &:focus {
-    color: palette.$color4;
+    color: palette.$text;
     text-shadow: 1px 1px #000;
   }
   &:active {
-    color: palette.$color4;
+    color: palette.$text;
     text-shadow: 1px 1px #000;
   }
+}
+
+.skills__container{
+  font-weight: bolder;
+  font-size: medium;
 }

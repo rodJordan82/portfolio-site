@@ -9,21 +9,186 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Palette+Mosaic&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Rod</title>
+  <title>Rod Jordan</title>
 </head>
 <body>
-
-  <nav>
-    <ul>
-      <li><a href="./index.html"><i class="material-icons">home</i></a></li>
-      <li><a href="./about.html"><i class="material-icons">person</i></a></li>
-      <li><a href="./projects.html"><i class="material-icons">lightbulb</i></a></li>
-      <li><a href="./contact.html"><i class="material-icons">alternate_email</i></a></li>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">Me</a></li>
+      <li><a href="#projects">Projects</a></li>
     </ul>
   </nav>
   <div class="main__div--style">
-  <h1>Rod Jordan</h1>
-  <p>Coder/Couch potato/<a href="https://www.youtube.com/watch?v=aBC7bHHeLdU&t=0s" target="_blank" title="Origami cats, not the other type, but I DO like Ragdolls!">Cat maker</a></p>
+    <img id="main__div--img" src="./assets/inRodWeTrust.png" alt="In Rod We Trust" title='Reference: The Simpsons, S05E15 "Deep Space Homer"'> 
+    <h1>Rod Jordan</h1>
+    <p>Coder/Couch potato/<span title="Origami cats, not the other type, but I DO like Ragdolls!">Cat maker</span></p>
+    <section class="contact">
+      <div>
+        <ul class="contact__list">
+          <li class="contact__list--icons">
+            <a href="mailto:rodjordan82@gmail.com" title="Email Rod directly!">
+              <img class="contact__list--icons--image" src="./assets/gmail-icon.svg" alt="Email">
+            </a>
+          </li>
+          <li class="contact__list--icons">
+            <a href="https://github.com/rodJordan82?tab=repositories" target="_blank" title="Is Rod an old GIT? Find out!">
+              <img class="contact__list--icons--image" src="./assets/github-icon-1.svg" alt="GitHub">
+            </a>
+          </li>
+          <li class="contact__list--icons">
+            <a href="https://www.linkedin.com/in/rod-jordan-25507426/" target="_blank" title="Networking for those on a network!">
+              <img class="contact__list--icons--image" src="./assets/linkedin-icon-2.svg" alt="LinkedIn">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="main__div--skills">
+      <h1 id="skills">Skills</h1>
+      <div class="skills__container">
+        <div class="skills__container--skillBox">
+          <img src="./assets/sass-1.svg" alt="SASS">
+            SASS
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/logo-javascript.svg" alt="Javascript">
+            Javascript
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/html-1.svg" alt="HTML">
+            HTML
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/css-3.svg" alt="CSS">
+            CSS
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/c--4.svg" alt="C#">
+            C#
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/git-icon.svg" alt="GIT">
+            GIT
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/java.svg" alt="Java">
+            Java
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/mysql-6.svg" alt="mySQL">
+            mySQL
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/react-2.svg" alt="REACT">
+            REACT
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/spring-3.svg" alt="SPRING">
+            SPRING
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/python-5.svg" alt="PYTHON">
+            PYTHON
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/c-1.svg" alt="C">
+            C
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/VBA.png" alt="VBA">
+            VBA
+        </div>
+        <div class="skills__container--skillBox">
+          <img src="./assets/nodejs-icon.svg" alt="Node.js" >
+            Node.js
+        </div>
+      </div>
+    </div>
+    <div class="main__div--about">
+      <h3 class="main__div--about--heading" id="about">
+        About Rod
+      </h3>
+      <p class="main__div--about--blurb">
+        An Irishman living in Australia, Rod has always loved talking about himself in the third person and
+        completing<span id="dots">...</span>
+        <span id="more"> flavour text for websites.<br/>
+          Known for his irreverent sense of humour, corpulence and shiny, shiny head, Rod is the Incredible Bulk of the coding
+          community in Latvia. When not coding he is attached to some other forms of digital device but has been known to forage
+          for analogue signals in harsher climates.<br/>
+          Rod's favourite South American rodent is the viscacha followed closely by the largest extant rodent species, the
+          Capybara.<br/>
+          Unfortunately, due to NSW laws, Rod does not own a leucistic Ball Python, called Lord White.<br/>
+          A natural coder, Rod has loved every programming language he has played with, from BASIC on the Commodore 64 to C and
+          C++ in the computer labs at Uni. Industrial robotic arms are the best toys for a grown boy!<br/>
+          Java was then proffered by the Universe and soon Javascript, HTML, SASS, GIT and more were added to Rod's always
+          voracious maw.<br/>
+          If I cannot learn it, I must have died since writing this...
+        </span>
+      </p>
+        <button class="btn" onclick="readMore()" id="myBtn">Click for more bio!</button>
+    </div>
   </div>
+  <section class="projects">
+    <h2 id="projects">Projects</h2>
+    <div class="projects__container">
+      <div class="projects__container--item">
+        <div class="projects__container--item--info-divider">
+          <img class="projects__container--item--info-divider--image" src="./assets/Delorean.jpg"
+            alt="Delorean Time Machine">
+          <h3 class="projects__container--item--info-divider--name">Delorean Time Machine</h3>
+          <p class="projects__container--item--info-divider--description">
+            Vehicle for transportation along both temporal and Euclidean coordinates.
+          </p>
+        </div>
+        <div class="projects__container--item--link-divider">
+          <a class="projects__container--item--link-divider--link" href="https://en.wikipedia.org/wiki/DeLorean_time_machine"
+            target="_blank" rel="noopener noreferrer" title="See the future..NOW!">
+            <p>
+              Find out more!
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="projects__container--item">
+        <div class="projects__container--item--info-divider">
+          <img class="projects__container--item--info-divider--image" src="./assets/31-avp-selfdestruct.PNG.webp" alt="Wrist-mounted Fusion Reactor">
+          <h3 class="projects__container--item--info-divider--name">Wrist-mounted Fusion Reactor</h3>
+          <p class="projects__container--item--info-divider--description">
+            Compact, wearable device for counting and going boom.
+          </p>
+        </div>
+        <div class="projects__container--item--link-divider">
+          <a class="projects__container--item--link-divider--link" href="https://avp.fandom.com/wiki/Wrist_Gauntlet"
+            target="_blank" rel="noopener noreferrer" title="Nothing like it has ever been on earth before!">
+            <p>
+              Find out more!
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="projects__container--item">
+        <div class="projects__container--item--info-divider">
+          <img class="projects__container--item--info-divider--image" src="./assets/Bajoran_wormhole.webp" alt="Einstein-Rosen Bridge">
+          <h3 class="projects__container--item--info-divider--name">Einstein-Rosen Bridge</h3>
+          <p class="projects__container--item--info-divider--description">
+            Get there for half the price, twice as fast. *Possible risk of death.
+          </p>
+        </div>
+        <div class="projects__container--item--link-divider">
+          <a class="projects__container--item--link-divider--link" href="https://en.wikipedia.org/wiki/Wormhole"
+            target="_blank" rel="noopener noreferrer" title="Enjoy the world of portals!">
+            <p>
+              Find out more!
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p>
+  Made by hand, with locally sourced electrons 2022
+  </p>
 </body>
+<script src="script.js" defer></script>
 </html>
